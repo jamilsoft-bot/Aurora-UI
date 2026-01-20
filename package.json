@@ -1,0 +1,38 @@
+{
+  "name": "@myakububauchi/aurora-ui",
+  "version": "1.0.0",
+  "description": "Aurora Design System",
+  "keywords": [
+    "Css",
+    "UI",
+    "React"
+  ],
+  "homepage": "https://github.com/jamilsoft-bot/Aurora-UI#readme",
+  "bugs": {
+    "url": "https://github.com/jamilsoft-bot/Aurora-UI/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamilsoft-bot/Aurora-UI.git"
+  },
+  "license": "ISC",
+  "author": "Muhammad Jamil",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "format": "pnpm -r format",
+    "storybook": "pnpm --filter @aurora/docs storybook",
+    "docs": "pnpm --filter @aurora/docs dev",
+    "demo": "pnpm --filter @aurora/demo dev"
+  }
+}
