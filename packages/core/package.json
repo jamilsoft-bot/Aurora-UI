@@ -4,7 +4,7 @@
   "main": "dist/aurora.css",
   "files": ["dist"],
   "scripts": {
-    "build": "cp src/aurora.css dist/aurora.css",
+    "build": "mkdir -p dist && cat src/aurora.css src/utilities/layout.css > dist/aurora.css",
     "lint": "echo 'no lint yet'",
     "format": "echo 'no format yet'"
   },
