@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aurora UI • Layout Utilities Demo</title>
+    <link rel="stylesheet" href="../../dist/styles.css" />
+  </head>
+  <body class="stack" style="--stack-gap: var(--aurora-space-12); padding: var(--aurora-space-8);">
+    <header class="container stack" style="--stack-gap: var(--aurora-space-4);">
+      <div class="flex items-center justify-between gap-4">
+        <div class="stack" style="--stack-gap: var(--aurora-space-2);">
+          <span class="aurora-badge">Layout utilities</span>
+          <h1>Build responsive layouts with Aurora</h1>
+          <p class="u-text-muted">Use flex, grid, and layout patterns to compose pages quickly.</p>
+        </div>
+        <div class="cluster" style="--cluster-gap: var(--aurora-space-2);">
+          <button class="aurora-btn sm">Get started</button>
+          <button class="aurora-btn sm secondary">Docs</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="container stack" style="--stack-gap: var(--aurora-space-6);">
+      <h2>Containers</h2>
+      <div class="stack" style="--stack-gap: var(--aurora-space-3);">
+        <div class="aurora-card">
+          <strong>.container</strong>
+          <p class="u-text-muted">Responsive max-width with padding.</p>
+        </div>
+        <div class="aurora-card">
+          <strong>.container-fluid</strong>
+          <p class="u-text-muted">Full width, aligned to the page gutter.</p>
+        </div>
+        <div class="aurora-card">
+          <strong>.container-narrow</strong>
+          <p class="u-text-muted">Readable width for text-heavy sections.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container stack" style="--stack-gap: var(--aurora-space-6);">
+      <h2>Flex alignment + gap</h2>
+      <div class="aurora-card flex items-center justify-between gap-4">
+        <div class="stack" style="--stack-gap: var(--aurora-space-1);">
+          <strong>Team activity</strong>
+          <span class="u-text-muted">Track updates in real time.</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <button class="aurora-btn sm">Invite</button>
+          <button class="aurora-btn sm secondary">View all</button>
+        </div>
+      </div>
+      <div class="aurora-card flex flex-wrap gap-3">
+        <span class="aurora-badge">Design</span>
+        <span class="aurora-badge">Build</span>
+        <span class="aurora-badge">Ship</span>
+        <span class="aurora-badge">Support</span>
+      </div>
+    </section>
+
+    <section class="container stack" style="--stack-gap: var(--aurora-space-6);">
+      <h2>Grid with responsive columns</h2>
+      <div class="grid grid-cols-1 sm-grid-cols-2 lg-grid-cols-4 gap-4">
+        <article class="aurora-card">
+          <h3>Column 1</h3>
+          <p class="u-text-muted">Smarter layout utilities.</p>
+        </article>
+        <article class="aurora-card">
+          <h3>Column 2</h3>
+          <p class="u-text-muted">Use gap utilities for spacing.</p>
+        </article>
+        <article class="aurora-card">
+          <h3>Column 3</h3>
+          <p class="u-text-muted">Responsive variants built in.</p>
+        </article>
+        <article class="aurora-card">
+          <h3>Column 4</h3>
+          <p class="u-text-muted">Flexible, composable classes.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container stack" style="--stack-gap: var(--aurora-space-6);">
+      <h2>Sidebar pattern</h2>
+      <div class="sidebar">
+        <aside class="aurora-card stack" style="--stack-gap: var(--aurora-space-2);">
+          <strong>Sidebar</strong>
+          <p class="u-text-muted">Navigation or metadata lives here.</p>
+          <button class="aurora-btn sm">Action</button>
+        </aside>
+        <article class="aurora-card stack" style="--stack-gap: var(--aurora-space-3);">
+          <h3>Main content</h3>
+          <p class="u-text-muted">
+            The sidebar pattern stacks vertically on small screens, then switches to two columns at
+            the medium breakpoint.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="aurora-badge">Responsive</span>
+            <span class="aurora-badge">Grid-based</span>
+            <span class="aurora-badge">Beginner friendly</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </body>
+</html>
