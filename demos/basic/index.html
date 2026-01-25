@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aurora UI • Basic Demo</title>
+    <link rel="stylesheet" href="../../dist/styles.css" />
+  </head>
+  <body>
+    <nav class="aurora-navbar">
+      <div class="aurora-container" style="display: flex; align-items: center; justify-content: space-between; padding: 1rem 0;">
+        <strong>Aurora UI</strong>
+        <div style="display: flex; gap: 0.75rem;">
+          <a href="#components">Components</a>
+          <a href="#forms">Forms</a>
+          <a href="#cards">Cards</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="aurora-container aurora-stack" style="padding: 2rem 0;">
+      <section class="aurora-stack">
+        <span class="aurora-badge">New</span>
+        <h1>Build polished UIs fast</h1>
+        <p class="u-text-muted">
+          Aurora provides ready-to-use components and utilities so you can focus on your product, not your CSS.
+        </p>
+        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+          <button class="aurora-btn">Primary action</button>
+          <button class="aurora-btn secondary">Secondary</button>
+          <button class="aurora-btn ghost">Ghost</button>
+        </div>
+      </section>
+
+      <section id="cards" class="aurora-stack">
+        <h2>Cards & alerts</h2>
+        <div style="display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+          <article class="aurora-card">
+            <h3>Starter kit</h3>
+            <p class="u-text-muted">All the basics to get going quickly.</p>
+            <button class="aurora-btn sm">Choose plan</button>
+          </article>
+          <article class="aurora-card">
+            <h3>Team plan</h3>
+            <p class="u-text-muted">Shared tokens and components for teams.</p>
+            <button class="aurora-btn sm outline">Upgrade</button>
+          </article>
+          <article class="aurora-card">
+            <h3>Enterprise</h3>
+            <p class="u-text-muted">Custom theming and support.</p>
+            <button class="aurora-btn sm ghost">Contact us</button>
+          </article>
+        </div>
+        <div class="aurora-alert" data-state="info">
+          Tip: You can customize colors by editing <code>packages/tokens/tokens.css</code>.
+        </div>
+      </section>
+
+      <section id="forms" class="aurora-stack">
+        <h2>Forms</h2>
+        <div class="aurora-card" style="display: grid; gap: 1rem;">
+          <div class="aurora-field">
+            <label class="aurora-field-label" for="email">Email</label>
+            <input id="email" class="aurora-input" type="email" placeholder="you@example.com" />
+            <span class="aurora-field-help">We’ll never share your email.</span>
+          </div>
+          <div class="aurora-field" data-state="error">
+            <label class="aurora-field-label" for="password">Password</label>
+            <input id="password" class="aurora-input is-invalid" type="password" placeholder="••••••••" />
+            <span class="aurora-field-error">Password must be at least 8 characters.</span>
+          </div>
+          <div style="display: flex; gap: 0.75rem;">
+            <button class="aurora-btn">Create account</button>
+            <button class="aurora-btn secondary">Cancel</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="components" class="aurora-stack">
+        <h2>Navigation & badges</h2>
+        <div class="aurora-card" style="display: grid; gap: 1rem;">
+          <div class="aurora-breadcrumb">
+            <ol>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Docs</a></li>
+              <li>Basic demo</li>
+            </ol>
+          </div>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <span class="aurora-badge">Default</span>
+            <span class="aurora-badge">Beta</span>
+            <span class="aurora-badge">Pro</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
