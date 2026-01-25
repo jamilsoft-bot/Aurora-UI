@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aurora UI • Components Demo</title>
+    <link rel="stylesheet" href="../../dist/styles.css" />
+  </head>
+  <body>
+    <header class="aurora-navbar">
+      <div class="aurora-container" style="display: flex; align-items: center; justify-content: space-between; padding: 1rem 0;">
+        <strong>Components Tour</strong>
+        <a href="../basic/index.html">← Back to basic demo</a>
+      </div>
+    </header>
+
+    <main class="aurora-container aurora-stack" style="padding: 2rem 0;">
+      <section class="aurora-stack">
+        <h1>Components & Utilities</h1>
+        <p class="u-text-muted">
+          Each section below shows a component with a short explanation to help you learn the Aurora classes quickly.
+        </p>
+      </section>
+
+      <section class="aurora-stack">
+        <h2>Buttons</h2>
+        <p class="u-text-muted">Use <code>.aurora-btn</code> with variants like <code>.secondary</code>, <code>.ghost</code>, and size modifiers.</p>
+        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+          <button class="aurora-btn">Primary</button>
+          <button class="aurora-btn secondary">Secondary</button>
+          <button class="aurora-btn ghost">Ghost</button>
+          <button class="aurora-btn outline">Outline</button>
+          <button class="aurora-btn success">Success</button>
+          <button class="aurora-btn danger">Danger</button>
+          <button class="aurora-btn sm">Small</button>
+          <button class="aurora-btn lg">Large</button>
+        </div>
+      </section>
+
+      <section class="aurora-stack">
+        <h2>Form fields</h2>
+        <p class="u-text-muted">Wrap inputs with <code>.aurora-field</code> and label them for consistent spacing.</p>
+        <div class="aurora-card" style="display: grid; gap: 1rem;">
+          <div class="aurora-field">
+            <label class="aurora-field-label" for="name">Name</label>
+            <input id="name" class="aurora-input" type="text" placeholder="Jane Doe" />
+          </div>
+          <div class="aurora-field">
+            <label class="aurora-field-label" for="role">Role</label>
+            <select id="role" class="aurora-input">
+              <option>Designer</option>
+              <option>Developer</option>
+              <option>Product</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <section class="aurora-stack">
+        <h2>Cards & badges</h2>
+        <p class="u-text-muted">Cards provide padded surfaces; badges highlight short labels.</p>
+        <div style="display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+          <article class="aurora-card">
+            <h3>Monthly Report</h3>
+            <p class="u-text-muted">Summary of this month’s activity.</p>
+            <span class="aurora-badge">Updated</span>
+          </article>
+          <article class="aurora-card">
+            <h3>Team Inbox</h3>
+            <p class="u-text-muted">Centralize your communication.</p>
+            <span class="aurora-badge">12 new</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="aurora-stack">
+        <h2>Alerts</h2>
+        <p class="u-text-muted">Set state using classes or <code>data-state</code> attributes.</p>
+        <div class="aurora-alert" data-state="info">Info alert with helpful context.</div>
+        <div class="aurora-alert" data-state="success">Success alert for positive outcomes.</div>
+        <div class="aurora-alert" data-state="warning">Warning alert for attention.</div>
+        <div class="aurora-alert" data-state="danger">Danger alert for errors.</div>
+      </section>
+
+      <section class="aurora-stack">
+        <h2>Tabs</h2>
+        <p class="u-text-muted">Tabs are simple and accessible with <code>aria-selected</code>.</p>
+        <div class="aurora-tabs">
+          <button class="aurora-tab" aria-selected="true">Overview</button>
+          <button class="aurora-tab" aria-selected="false">Billing</button>
+          <button class="aurora-tab" aria-selected="false">Security</button>
+        </div>
+      </section>
+
+      <section class="aurora-stack">
+        <h2>Tables</h2>
+        <p class="u-text-muted">Use <code>.aurora-table</code> for clean data tables.</p>
+        <table class="aurora-table">
+          <thead>
+            <tr>
+              <th>Project</th>
+              <th>Status</th>
+              <th>Owner</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Marketing Site</td>
+              <td>In progress</td>
+              <td>Alex</td>
+            </tr>
+            <tr>
+              <td>Design System</td>
+              <td>Review</td>
+              <td>Sam</td>
+            </tr>
+            <tr>
+              <td>Mobile App</td>
+              <td>Planned</td>
+              <td>Jordan</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="aurora-stack">
+        <h2>Avatars & breadcrumbs</h2>
+        <p class="u-text-muted">Great for profile chips and navigation context.</p>
+        <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+          <img class="aurora-avatar" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Crect width='100%25' height='100%25' fill='%232f86ff'/%3E%3Ctext x='50%25' y='54%25' font-size='24' text-anchor='middle' fill='white' font-family='Arial'%3EAU%3C/text%3E%3C/svg%3E" alt="Avatar" />
+          <img class="aurora-avatar sm" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Crect width='100%25' height='100%25' fill='%236b7280'/%3E%3Ctext x='50%25' y='54%25' font-size='24' text-anchor='middle' fill='white' font-family='Arial'%3ESM%3C/text%3E%3C/svg%3E" alt="Avatar small" />
+          <img class="aurora-avatar lg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96'%3E%3Crect width='100%25' height='100%25' fill='%231f9d6a'/%3E%3Ctext x='50%25' y='54%25' font-size='32' text-anchor='middle' fill='white' font-family='Arial'%3ELG%3C/text%3E%3C/svg%3E" alt="Avatar large" />
+          <nav class="aurora-breadcrumb" aria-label="Breadcrumb">
+            <ol>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Team</a></li>
+              <li>Aurora</li>
+            </ol>
+          </nav>
+        </div>
+      </section>
+
+      <section class="aurora-stack">
+        <h2>Navbar & sidebar</h2>
+        <p class="u-text-muted">Use these structural styles for app layouts.</p>
+        <div style="display: grid; gap: 1rem; grid-template-columns: minmax(180px, 240px) 1fr;">
+          <aside class="aurora-sidebar" style="min-height: 200px;">
+            <div class="aurora-sidebar-header">Workspace</div>
+            <div class="aurora-sidebar-content">
+              <a href="#">Dashboard</a>
+              <a href="#">Reports</a>
+              <a href="#">Settings</a>
+            </div>
+            <div class="aurora-sidebar-footer">Need help?</div>
+          </aside>
+          <section class="aurora-card">
+            <h3>Main content area</h3>
+            <p class="u-text-muted">Pair the sidebar with cards to create layouts quickly.</p>
+          </section>
+        </div>
+      </section>
+
+      <section class="aurora-stack">
+        <h2>Tooltip & popover</h2>
+        <p class="u-text-muted">Hover to see tooltip; popover panels are always visible in this demo.</p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <div class="aurora-tooltip">
+            <button class="aurora-btn sm">Hover me</button>
+            <span class="aurora-tooltip-content">Tooltip text</span>
+          </div>
+          <div class="aurora-popover">
+            <button class="aurora-btn sm outline">Popover trigger</button>
+            <div class="aurora-popover-panel">Popover content stays visible in this static demo.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="aurora-stack">
+        <h2>Accordion</h2>
+        <p class="u-text-muted">Accordion items are stacked cards with a trigger and panel.</p>
+        <div>
+          <div class="aurora-accordion-item">
+            <button class="aurora-accordion-trigger">What is Aurora?</button>
+            <div class="aurora-accordion-panel">A friendly CSS design system for quick UI building.</div>
+          </div>
+          <div class="aurora-accordion-item">
+            <button class="aurora-accordion-trigger">How do I customize it?</button>
+            <div class="aurora-accordion-panel">Edit tokens and rebuild the CSS output.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="aurora-stack">
+        <h2>Toasts</h2>
+        <p class="u-text-muted">Use the toast styles for notification banners.</p>
+        <div class="aurora-toast" data-intent="success">Your changes have been saved.</div>
+        <div class="aurora-toast" data-intent="warning">Your trial ends in 3 days.</div>
+        <div class="aurora-toast" data-intent="danger">Payment failed. Update your card.</div>
+      </section>
+
+      <section class="aurora-stack">
+        <h2>Spinner & skeleton</h2>
+        <p class="u-text-muted">Use these for loading states.</p>
+        <div style="display: flex; gap: 1rem; align-items: center;">
+          <div class="aurora-spinner" aria-label="Loading"></div>
+          <div class="aurora-skeleton" style="width: 200px; height: 1rem;"></div>
+        </div>
+      </section>
+
+      <section class="aurora-stack">
+        <h2>Utility classes</h2>
+        <p class="u-text-muted">Combine utilities for quick layout tweaks.</p>
+        <div class="aurora-card u-shadow" style="display: flex; gap: 0.75rem; align-items: center;">
+          <div class="aurora-badge">Utility</div>
+          <div class="u-text-muted">This card uses <code>.u-shadow</code> and simple flex layout.</div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

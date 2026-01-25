@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aurora UI • Dashboard Template</title>
+    <link rel="stylesheet" href="../../dist/styles.css" />
+  </head>
+  <body>
+    <div style="display: grid; grid-template-columns: minmax(200px, 240px) 1fr; min-height: 100vh;">
+      <aside class="aurora-sidebar" style="padding: 1.5rem;">
+        <div class="aurora-sidebar-header">Aurora Admin</div>
+        <div class="aurora-sidebar-content">
+          <a href="#">Overview</a>
+          <a href="#">Analytics</a>
+          <a href="#">Team</a>
+          <a href="#">Settings</a>
+        </div>
+        <div class="aurora-sidebar-footer">Signed in as Jamie</div>
+      </aside>
+
+      <div>
+        <header class="aurora-navbar">
+          <div class="aurora-container" style="display: flex; align-items: center; justify-content: space-between; padding: 1rem 0;">
+            <div>
+              <h2 style="margin: 0;">Overview</h2>
+              <p class="u-text-muted" style="margin: 0;">Welcome back! Here’s what’s new.</p>
+            </div>
+            <div style="display: flex; gap: 0.75rem;">
+              <button class="aurora-btn sm">New report</button>
+              <button class="aurora-btn sm outline">Download</button>
+            </div>
+          </div>
+        </header>
+
+        <main class="aurora-container aurora-stack" style="padding: 2rem 0;">
+          <section style="display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+            <div class="aurora-card">
+              <h3>Total revenue</h3>
+              <p class="u-text-muted">$124,800</p>
+            </div>
+            <div class="aurora-card">
+              <h3>Active users</h3>
+              <p class="u-text-muted">3,452</p>
+            </div>
+            <div class="aurora-card">
+              <h3>Conversion</h3>
+              <p class="u-text-muted">4.3%</p>
+            </div>
+          </section>
+
+          <section class="aurora-card" style="display: grid; gap: 1rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <h3 style="margin: 0;">Latest activity</h3>
+              <span class="aurora-badge">Updated</span>
+            </div>
+            <table class="aurora-table">
+              <thead>
+                <tr>
+                  <th>User</th>
+                  <th>Action</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Riley</td>
+                  <td>Published a report</td>
+                  <td>Success</td>
+                </tr>
+                <tr>
+                  <td>Casey</td>
+                  <td>Invited a new member</td>
+                  <td>Pending</td>
+                </tr>
+                <tr>
+                  <td>Jordan</td>
+                  <td>Updated billing info</td>
+                  <td>Success</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <section style="display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+            <div class="aurora-card">
+              <h3>Team notes</h3>
+              <p class="u-text-muted">Your team is on track for this sprint.</p>
+              <button class="aurora-btn sm">Open tasks</button>
+            </div>
+            <div class="aurora-card">
+              <h3>Notifications</h3>
+              <div class="aurora-toast" data-intent="warning">2 tasks are overdue.</div>
+              <div class="aurora-toast" data-intent="success">Deployment completed.</div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

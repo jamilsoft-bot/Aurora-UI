@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aurora UI • Landing Page Template</title>
+    <link rel="stylesheet" href="../../dist/styles.css" />
+  </head>
+  <body>
+    <nav class="aurora-navbar">
+      <div class="aurora-container" style="display: flex; align-items: center; justify-content: space-between; padding: 1rem 0;">
+        <strong>Aurora</strong>
+        <div style="display: flex; gap: 1rem; align-items: center;">
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <button class="aurora-btn sm">Get started</button>
+        </div>
+      </div>
+    </nav>
+
+    <main class="aurora-container aurora-stack" style="padding: 3rem 0;">
+      <section class="aurora-stack" style="gap: 1.5rem;">
+        <span class="aurora-badge">Design system</span>
+        <h1>Ship beautiful interfaces with confidence</h1>
+        <p class="u-text-muted" style="max-width: 640px;">
+          Aurora bundles tokens, components, and utilities into one clean stylesheet so your team can deliver consistent UI in days, not weeks.
+        </p>
+        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+          <button class="aurora-btn">Start building</button>
+          <button class="aurora-btn outline">View components</button>
+        </div>
+        <div style="display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+          <div class="aurora-card">
+            <h3>Unified tokens</h3>
+            <p class="u-text-muted">Keep color, spacing, and typography consistent across projects.</p>
+          </div>
+          <div class="aurora-card">
+            <h3>Production-ready</h3>
+            <p class="u-text-muted">Use the compiled CSS directly or integrate into any stack.</p>
+          </div>
+          <div class="aurora-card">
+            <h3>Accessible patterns</h3>
+            <p class="u-text-muted">Components include focus states, sensible defaults, and helpful variants.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="aurora-stack">
+        <h2>Feature highlights</h2>
+        <div style="display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
+          <div class="aurora-card">
+            <h3>Buttons & forms</h3>
+            <p class="u-text-muted">Drop-in button styles and form fields to speed up shipping.</p>
+          </div>
+          <div class="aurora-card">
+            <h3>Layout helpers</h3>
+            <p class="u-text-muted">Simple utilities and containers for responsive layouts.</p>
+          </div>
+          <div class="aurora-card">
+            <h3>Ready-made alerts</h3>
+            <p class="u-text-muted">Communicate states with consistent color and spacing.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="aurora-stack">
+        <h2>Pricing</h2>
+        <div style="display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+          <article class="aurora-card">
+            <h3>Starter</h3>
+            <p class="u-text-muted">Great for side projects.</p>
+            <h2>$0</h2>
+            <button class="aurora-btn sm">Choose</button>
+          </article>
+          <article class="aurora-card" style="border-color: var(--aurora-color-primary);">
+            <h3>Team</h3>
+            <p class="u-text-muted">For growing product teams.</p>
+            <h2>$24</h2>
+            <button class="aurora-btn sm">Choose</button>
+          </article>
+          <article class="aurora-card">
+            <h3>Enterprise</h3>
+            <p class="u-text-muted">Custom support and onboarding.</p>
+            <h2>Let’s talk</h2>
+            <button class="aurora-btn sm outline">Contact</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="aurora-alert" data-state="info">
+        Build the CSS once, then reuse it anywhere. Edit tokens and run <code>npm run build:css</code> to update styles.
+      </section>
+    </main>
+  </body>
+</html>

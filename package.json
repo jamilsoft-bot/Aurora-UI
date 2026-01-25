@@ -29,10 +29,12 @@
   ],
   "scripts": {
     "build": "pnpm -r build",
+    "build:css": "npm --prefix packages/tokens run build && npm --prefix packages/core run build && mkdir -p dist && cat packages/tokens/dist/tokens.css packages/core/dist/aurora.css > dist/styles.css",
     "lint": "pnpm -r lint",
     "format": "pnpm -r format",
     "storybook": "pnpm --filter @aurora/docs storybook",
     "docs": "pnpm --filter @aurora/docs dev",
-    "demo": "pnpm --filter @aurora/demo dev"
+    "demo": "python3 -m http.server 5173 --directory .",
+    "demo:build": "npm run build:css && npm run demo"
   }
 }
